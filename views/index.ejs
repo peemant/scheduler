@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="stylesheet" href="/css/reset.css">
-    <link type="stylesheet" href="/css/variables.css">
-    <link type="stylesheet" href="/css/fonts.css">
-    <link type="stylesheet" href="/public/css/styles.css">
+    <!-- This are the style files. -->
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/variables.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/styles.css">
 
     <!-- This is for the font, in this case, ROBOTO font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,15 +15,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
 
-    <title>Scheduler
-    </title>
+    <title>Scheduler</title>
 </head>
 <body>
-    <div id="left_Section">
-        Test
-    </div>
-    <div id="right_Section">
+    <div id="main">
+        <div id="corner">
+        
+        </div>
+        <div id="top_nav_bar">
+    
+        </div>
+        <div id="side_bar">
+            <% if (locals.side_bar_index_menu) { %>
+                <%- include(`ejs_modules/${side_bar_index_menu}`); %>
+            <% } %>
+        </div>
+        <div id="main_content_area">
 
+        </div>
     </div>
+
 </body>
 </html>
